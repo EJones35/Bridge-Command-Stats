@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+
+	<title>Bridge Command Stats</title>
+</head>
+<body>
+	<header id="home">
+		<h1>Bridge Command Stats Tracker</h1>
+	</header>
+	<main>
+	<nav class="general" id="nav">
+		<a href="#home">Home</a>
+		<a href="#profile">Profile</a>
+		<a href="#dashboard">Dashboard</a>
+		<a href="#stats">Stats</a>
+		<a href="#mission-history">Mission History</a>
+		<a href="#add-mission">Add Mission</a>
+		<a href="#reference">Reference</a>
+		<button id="close-nav" class="close-nav" onclick="closeNav()">Close</button>
+	</nav>
+
+	<section id="profile">
+		<h2>Profile</h2>
+		<form id="profile-form" class="profile-form">
+			<label for="profile-name-form">Name</label>
+			<input type="text" id="profile-name-form">
+
+			<br>
+
+			<label for="profile-callsign-form">Callsign</label>
+			<input type="text" id="profile-callsign-form">
+
+			<br>
+
+			<label for="profile-rank-form">Rank</label>
+			<select id="profile-rank-form">
+				<option>Cadet</option>
+				<option>Ensign</option>
+				<option>Sub Lieutenant</option>
+				<option>Lieutenant</option>
+				<option>Lieutenant Commander</option>
+			</select>
+
+			<br>
+
+			<label for="profile-description-form">Description</label>
+			<textarea id="profile-description-form" rows="4"></textarea>
+
+			<br>
+
+			<button type="button" id="profile-save" onclick="saveProfile()">Save</button>
+		</form>
+		<p id="profile-name"></p>
+		<p id="profile-callsign"></p>
+		<p id="profile-rank"></p>
+		<p id="profile-description"></p>
+	</section>
+
+	<section id="dashboard">
+		<h2>Dashboard</h2>
+	</section>
+
+	<section id="stats">
+		<h2>Stats</h2>
+	</section>
+
+	<section id="mission-history">
+		<h2>Mission History</h2>
+	</section>
+
+	<section id="add-mission">
+		<h2>Add Mission</h2>
+		<form id="mission-form" class="mission-form">
+		</form>
+	</section>
+
+	<section id="reference">
+		<h2>Reference</h2>
+	</section>
+	
+	</main>
+</body>
+</html>
